@@ -1,0 +1,23 @@
+{
+  "name": "saigen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/test.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/test.js",
+    "atk": "node ./dist/attack.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.3.0-beta1",
+    "readline-sync": "^1.4.10",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.3.6",
+    "@types/readline-sync": "^1.4.3"
+  }
+}

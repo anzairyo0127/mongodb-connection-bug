@@ -1,0 +1,24 @@
+version: "3"
+services:
+  a:
+    image: mongo:4.1.13-bionic
+    volumes:
+      - "./conf:/tmp/conf"
+    command: ["--replSet", "replset"]
+
+  b:
+    image: mongo:4.1.13-bionic
+    command: ["--replSet", "replset"]
+
+  c:
+    image: mongo:4.1.13-bionic
+    command: ["--replSet", "replset"]
+
+  node:
+    image: node:10.16.1-alpine
+    tty: true
+    depends_on:
+      - a
+    volumes:
+      - "./:/var/work"
+    working_dir: /var/work
