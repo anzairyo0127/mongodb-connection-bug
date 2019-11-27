@@ -1,4 +1,4 @@
-## This problem will be fixed.
+## This problem has been resolved in Ver3.3.5.
 
 link: https://jira.mongodb.org/browse/NODE-2267
 
